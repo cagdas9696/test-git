@@ -9,3 +9,6 @@ Bir projenin datasetini ve detaylarını incelemek için ilgili proje klasörün
 ### AWS S3 ile Dosya ve Klasör Yükleme
 - Yeni Bir Klasör Ekleme: `aws s3 cp <yerel-klasör-yolu> s3://<bucket-ismi>/<hedef-klasör>/ --recursive`
 - Dosya Yükleme: `aws s3 cp <yerel-dosya-yolu> s3://<bucket-ismi>/<hedef-dosya>`
+
+### AWS S3 ile Dosya ve Klasör İndirme
+- Klasör veya Dosya İndirme: `aws s3 sync s3://<bucket-ismi>/<klasor-prefix>/ <yerel-dizin>`
